@@ -1,0 +1,21 @@
+FUNCTION palindrom(mot:STRING) : STRING
+VAR
+    mot:STRING;
+    i:INTEGER;
+    j:INTEGER;
+BEGIN
+    i:=0
+    j:=mot.length-1
+    IF (mot.length==1) THEN
+        Write("Ce mot est un palindrome")        
+    END_IF
+
+
+    WHILE (i<=j) DO
+        IF (mot[i]!=mot[j]) THEN
+            Write("Ce mot n'est pas un palindrome")
+        ELSE 
+        Write("Ce mot est un palindrome")
+        END_IF
+    END_WHILE
+END
