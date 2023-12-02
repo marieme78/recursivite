@@ -1,4 +1,4 @@
-FUNCTION palindrom(mot:STRING) : STRING
+FUNCTION palindrome(mot:STRING) : STRING
 VAR
     mot:STRING;
     i:INTEGER;
@@ -17,5 +17,7 @@ BEGIN
         ELSE 
         Write("Ce mot est un palindrome")
         END_IF
+        i=i+1
+        j=j-1
     END_WHILE
 END
